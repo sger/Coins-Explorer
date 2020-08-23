@@ -25,6 +25,8 @@ final class TopListViewModel: ObservableObject {
         }
     }
     
+    private var searchQueryCancellable: AnyCancellable?
+    
     var currentTopListData: [TopListData] {
         get {
             if !searchQuery.isEmpty {
@@ -41,6 +43,13 @@ final class TopListViewModel: ObservableObject {
         self.scheduler = scheduler
         
         fetchTopList(limit: 20, tsym: "USD")
+        
+        searchQueryCancellable = $searchQuery
+            .debounce(for: .milliseconds(300), scheduler: scheduler)
+            .removeDuplicates()
+            .filter { !$0.isEmpty }
+            .map { [weak self] in self?.filteredTopListData(with: $0) ?? [] }
+            .sink(receiveValue: { [weak self] in self?.searchResults = $0 })
     }
     
     func fetchTopList(limit: Int, tsym: String) {
@@ -49,5 +58,11 @@ final class TopListViewModel: ObservableObject {
             .receive(on: scheduler)
             .map { $0.data }
             .sink(receiveValue: { [weak self] in self?.topListData = $0 })
+    }
+    
+    private func filteredTopListData(with string: String) -> [TopListData] {
+        topListData.filter {
+            $0.coinInfo.fullName.lowercased().contains(string.lowercased()) == true
+        }
     }
 }
