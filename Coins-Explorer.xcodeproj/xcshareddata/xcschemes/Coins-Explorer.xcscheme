@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Coins-Explorer.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "56C667A024F2ADD20087FC24"
+               BuildableName = "Coins-ExplorerSnapshotTests.xctest"
+               BlueprintName = "Coins-ExplorerSnapshotTests"
+               ReferencedContainer = "container:Coins-Explorer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

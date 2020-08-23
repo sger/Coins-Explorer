@@ -17,8 +17,8 @@
 		561DF32224F2427D00924DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32124F2427D00924DDB /* Assets.xcassets */; };
 		561DF32524F2427D00924DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32424F2427D00924DDB /* Preview Assets.xcassets */; };
 		561DF33B24F2427D00924DDB /* Coins_ExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */; };
-		56C6679A24F29EB40087FC24 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 56C6679924F29EB40087FC24 /* SnapshotTesting */; };
-		56C6679C24F29ED10087FC24 /* TopListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C6679B24F29ED10087FC24 /* TopListViewTests.swift */; };
+		56C667AB24F2ADE20087FC24 /* TopListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C6679B24F29ED10087FC24 /* TopListViewTests.swift */; };
+		56C667AE24F2AE540087FC24 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 56C667AD24F2AE540087FC24 /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,13 @@
 			remoteInfo = "Coins-Explorer";
 		};
 		561DF33724F2427D00924DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 561DF31224F2427C00924DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 561DF31924F2427C00924DDB;
+			remoteInfo = "Coins-Explorer";
+		};
+		56C667A624F2ADD20087FC24 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 561DF31224F2427C00924DDB /* Project object */;
 			proxyType = 1;
@@ -54,6 +61,8 @@
 		561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerUITests.swift; sourceTree = "<group>"; };
 		561DF33C24F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C6679B24F29ED10087FC24 /* TopListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewTests.swift; sourceTree = "<group>"; };
+		56C667A124F2ADD20087FC24 /* Coins-ExplorerSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerSnapshotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C667A524F2ADD20087FC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C6679A24F29EB40087FC24 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C6679E24F2ADD20087FC24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C667AE24F2AE540087FC24 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +123,7 @@
 				561DF31C24F2427C00924DDB /* Coins-Explorer */,
 				561DF32E24F2427D00924DDB /* Coins-ExplorerTests */,
 				561DF33924F2427D00924DDB /* Coins-ExplorerUITests */,
+				56C667A224F2ADD20087FC24 /* Coins-ExplorerSnapshotTests */,
 				561DF31B24F2427C00924DDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +134,7 @@
 				561DF31A24F2427C00924DDB /* Coins-Explorer.app */,
 				561DF32B24F2427D00924DDB /* Coins-ExplorerTests.xctest */,
 				561DF33624F2427D00924DDB /* Coins-ExplorerUITests.xctest */,
+				56C667A124F2ADD20087FC24 /* Coins-ExplorerSnapshotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +165,6 @@
 			children = (
 				561DF33124F2427D00924DDB /* Info.plist */,
 				561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */,
-				56C6679B24F29ED10087FC24 /* TopListViewTests.swift */,
 			);
 			path = "Coins-ExplorerTests";
 			sourceTree = "<group>";
@@ -159,6 +176,15 @@
 				561DF33C24F2427D00924DDB /* Info.plist */,
 			);
 			path = "Coins-ExplorerUITests";
+			sourceTree = "<group>";
+		};
+		56C667A224F2ADD20087FC24 /* Coins-ExplorerSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				56C6679B24F29ED10087FC24 /* TopListViewTests.swift */,
+				56C667A524F2ADD20087FC24 /* Info.plist */,
+			);
+			path = "Coins-ExplorerSnapshotTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +226,6 @@
 			);
 			name = "Coins-ExplorerTests";
 			packageProductDependencies = (
-				56C6679924F29EB40087FC24 /* SnapshotTesting */,
 			);
 			productName = "Coins-ExplorerTests";
 			productReference = 561DF32B24F2427D00924DDB /* Coins-ExplorerTests.xctest */;
@@ -224,6 +249,27 @@
 			productReference = 561DF33624F2427D00924DDB /* Coins-ExplorerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		56C667A024F2ADD20087FC24 /* Coins-ExplorerSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C667A824F2ADD20087FC24 /* Build configuration list for PBXNativeTarget "Coins-ExplorerSnapshotTests" */;
+			buildPhases = (
+				56C6679D24F2ADD20087FC24 /* Sources */,
+				56C6679E24F2ADD20087FC24 /* Frameworks */,
+				56C6679F24F2ADD20087FC24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C667A724F2ADD20087FC24 /* PBXTargetDependency */,
+			);
+			name = "Coins-ExplorerSnapshotTests";
+			packageProductDependencies = (
+				56C667AD24F2AE540087FC24 /* SnapshotTesting */,
+			);
+			productName = "Coins-ExplorerSnapshotTests";
+			productReference = 56C667A124F2ADD20087FC24 /* Coins-ExplorerSnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +290,10 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = 561DF31924F2427C00924DDB;
 					};
+					56C667A024F2ADD20087FC24 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 561DF31924F2427C00924DDB;
+					};
 				};
 			};
 			buildConfigurationList = 561DF31524F2427C00924DDB /* Build configuration list for PBXProject "Coins-Explorer" */;
@@ -258,7 +308,7 @@
 			packageReferences = (
 				561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */,
 				561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */,
-				56C6679824F29EB40087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				56C667AC24F2AE540087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 561DF31B24F2427C00924DDB /* Products */;
 			projectDirPath = "";
@@ -267,6 +317,7 @@
 				561DF31924F2427C00924DDB /* Coins-Explorer */,
 				561DF32A24F2427D00924DDB /* Coins-ExplorerTests */,
 				561DF33524F2427D00924DDB /* Coins-ExplorerUITests */,
+				56C667A024F2ADD20087FC24 /* Coins-ExplorerSnapshotTests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,6 +346,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56C6679F24F2ADD20087FC24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -313,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C6679C24F29ED10087FC24 /* TopListViewTests.swift in Sources */,
 				561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +380,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				561DF33B24F2427D00924DDB /* Coins_ExplorerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C6679D24F2ADD20087FC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C667AB24F2ADE20087FC24 /* TopListViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +403,11 @@
 			isa = PBXTargetDependency;
 			target = 561DF31924F2427C00924DDB /* Coins-Explorer */;
 			targetProxy = 561DF33724F2427D00924DDB /* PBXContainerItemProxy */;
+		};
+		56C667A724F2ADD20087FC24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 561DF31924F2427C00924DDB /* Coins-Explorer */;
+			targetProxy = 56C667A624F2ADD20087FC24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -586,6 +656,46 @@
 			};
 			name = Release;
 		};
+		56C667A924F2ADD20087FC24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A22EW7MN8G;
+				INFOPLIST_FILE = "Coins-ExplorerSnapshotTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spirosgerokostas.Coins-ExplorerSnapshotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coins-Explorer.app/Coins-Explorer";
+			};
+			name = Debug;
+		};
+		56C667AA24F2ADD20087FC24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A22EW7MN8G;
+				INFOPLIST_FILE = "Coins-ExplorerSnapshotTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spirosgerokostas.Coins-ExplorerSnapshotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coins-Explorer.app/Coins-Explorer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -625,6 +735,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		56C667A824F2ADD20087FC24 /* Build configuration list for PBXNativeTarget "Coins-ExplorerSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C667A924F2ADD20087FC24 /* Debug */,
+				56C667AA24F2ADD20087FC24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -644,7 +763,7 @@
 				minimumVersion = 0.1.2;
 			};
 		};
-		56C6679824F29EB40087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+		56C667AC24F2AE540087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
 			requirement = {
@@ -665,9 +784,9 @@
 			package = 561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */;
 			productName = CombineSchedulers;
 		};
-		56C6679924F29EB40087FC24 /* SnapshotTesting */ = {
+		56C667AD24F2AE540087FC24 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 56C6679824F29EB40087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			package = 56C667AC24F2AE540087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
