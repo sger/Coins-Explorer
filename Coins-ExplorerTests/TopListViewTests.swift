@@ -18,9 +18,9 @@ class TopListViewTests: XCTestCase {
                                          scheduler: DispatchQueue.immediateScheduler.eraseToAnyScheduler())
         let sut: TopListView = TopListView(viewModel: viewModel)
 
-        let vc = UIHostingController(rootView: sut)
-        vc.view.frame = UIScreen.main.bounds
-        assertSnapshot(matching: vc, as: .image)
+//        let vc = UIHostingController(rootView: sut)
+//        vc.view.frame = UIScreen.main.bounds
+        assertSnapshot(matching: sut, as: .image)
     }
 
 }
