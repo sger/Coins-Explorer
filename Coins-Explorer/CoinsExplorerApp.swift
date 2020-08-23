@@ -1,5 +1,5 @@
 //
-//  Coins_ExplorerApp.swift
+//  CoinsExplorerApp.swift
 //  Coins-Explorer
 //
 //  Created by Spiros Gerokostas on 23/8/20.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Coins_ExplorerApp: App {
+struct CoinsExplorerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CryptoCompareKit",
+        "repositoryURL": "https://github.com/sger/CryptoCompareKit",
+        "state": {
+          "branch": "main",
+          "revision": "af4a0e7c012957d642d1692dc9122319b3c13e52",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
