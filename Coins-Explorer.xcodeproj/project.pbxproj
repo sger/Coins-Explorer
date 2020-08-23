@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		561B48A024F246B40043D5D7 /* CryptoCompareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 561B489F24F246B40043D5D7 /* CryptoCompareKit */; };
 		561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48A324F2524B0043D5D7 /* TopListViewModel.swift */; };
+		561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 561B48A624F252EC0043D5D7 /* CombineSchedulers */; };
 		561DF31E24F2427C00924DDB /* CoinsExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */; };
 		561DF32024F2427C00924DDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31F24F2427C00924DDB /* ContentView.swift */; };
 		561DF32224F2427D00924DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32124F2427D00924DDB /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */,
 				561B48A024F246B40043D5D7 /* CryptoCompareKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +171,7 @@
 			name = "Coins-Explorer";
 			packageProductDependencies = (
 				561B489F24F246B40043D5D7 /* CryptoCompareKit */,
+				561B48A624F252EC0043D5D7 /* CombineSchedulers */,
 			);
 			productName = "Coins-Explorer";
 			productReference = 561DF31A24F2427C00924DDB /* Coins-Explorer.app */;
@@ -243,6 +246,7 @@
 			mainGroup = 561DF31124F2427C00924DDB;
 			packageReferences = (
 				561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */,
+				561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */,
 			);
 			productRefGroup = 561DF31B24F2427C00924DDB /* Products */;
 			projectDirPath = "";
@@ -618,6 +622,14 @@
 				kind = branch;
 			};
 		};
+		561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/combine-schedulers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -625,6 +637,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */;
 			productName = CryptoCompareKit;
+		};
+		561B48A624F252EC0043D5D7 /* CombineSchedulers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */;
+			productName = CombineSchedulers;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
