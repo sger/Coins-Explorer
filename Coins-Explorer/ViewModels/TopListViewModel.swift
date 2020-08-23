@@ -13,6 +13,8 @@ import CombineSchedulers
 final class TopListViewModel: ObservableObject {
     
     @Published var topListData: [TopListData] = []
+    @Published var searchResults: [TopListData] = []
+    @Published var searchQuery: String = ""
     
     private let client: CryptoCompareClient
     private let scheduler: AnySchedulerOf<DispatchQueue>
@@ -20,6 +22,16 @@ final class TopListViewModel: ObservableObject {
     private var clientCancellable: AnyCancellable? {
         willSet {
             clientCancellable?.cancel()
+        }
+    }
+    
+    var currentTopListData: [TopListData] {
+        get {
+            if !searchQuery.isEmpty {
+                return searchResults
+            } else {
+                return topListData
+            }
         }
     }
     
