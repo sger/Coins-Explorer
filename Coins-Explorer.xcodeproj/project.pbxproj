@@ -3,15 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		561DF31E24F2427C00924DDB /* Coins_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31D24F2427C00924DDB /* Coins_ExplorerApp.swift */; };
-		561DF32024F2427C00924DDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31F24F2427C00924DDB /* ContentView.swift */; };
+		561B48A024F246B40043D5D7 /* CryptoCompareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 561B489F24F246B40043D5D7 /* CryptoCompareKit */; };
+		561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48A324F2524B0043D5D7 /* TopListViewModel.swift */; };
+		561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 561B48A624F252EC0043D5D7 /* CombineSchedulers */; };
+		561B48A924F258470043D5D7 /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48A824F258470043D5D7 /* SearchFieldView.swift */; };
+		561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */; };
+		561DF31E24F2427C00924DDB /* CoinsExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */; };
+		561DF32024F2427C00924DDB /* TopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31F24F2427C00924DDB /* TopListView.swift */; };
 		561DF32224F2427D00924DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32124F2427D00924DDB /* Assets.xcassets */; };
 		561DF32524F2427D00924DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32424F2427D00924DDB /* Preview Assets.xcassets */; };
-		561DF33024F2427D00924DDB /* Coins_ExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF32F24F2427D00924DDB /* Coins_ExplorerTests.swift */; };
 		561DF33B24F2427D00924DDB /* Coins_ExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		561B48A324F2524B0043D5D7 /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
+		561B48A824F258470043D5D7 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
+		561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModelTests.swift; sourceTree = "<group>"; };
 		561DF31A24F2427C00924DDB /* Coins-Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coins-Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		561DF31D24F2427C00924DDB /* Coins_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerApp.swift; sourceTree = "<group>"; };
-		561DF31F24F2427C00924DDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsExplorerApp.swift; sourceTree = "<group>"; };
+		561DF31F24F2427C00924DDB /* TopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListView.swift; sourceTree = "<group>"; };
 		561DF32124F2427D00924DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561DF32424F2427D00924DDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		561DF32624F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561DF32B24F2427D00924DDB /* Coins-ExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		561DF32F24F2427D00924DDB /* Coins_ExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerTests.swift; sourceTree = "<group>"; };
 		561DF33124F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561DF33624F2427D00924DDB /* Coins-ExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerUITests.swift; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */,
+				561B48A024F246B40043D5D7 /* CryptoCompareKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		561B48A124F2473F0043D5D7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				561B48A324F2524B0043D5D7 /* TopListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		561B48A224F247460043D5D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				561B48A824F258470043D5D7 /* SearchFieldView.swift */,
+				561DF31F24F2427C00924DDB /* TopListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		561DF31124F2427C00924DDB = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +120,12 @@
 		561DF31C24F2427C00924DDB /* Coins-Explorer */ = {
 			isa = PBXGroup;
 			children = (
-				561DF31D24F2427C00924DDB /* Coins_ExplorerApp.swift */,
-				561DF31F24F2427C00924DDB /* ContentView.swift */,
 				561DF32124F2427D00924DDB /* Assets.xcassets */,
+				561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */,
 				561DF32624F2427D00924DDB /* Info.plist */,
 				561DF32324F2427D00924DDB /* Preview Content */,
+				561B48A124F2473F0043D5D7 /* ViewModels */,
+				561B48A224F247460043D5D7 /* Views */,
 			);
 			path = "Coins-Explorer";
 			sourceTree = "<group>";
@@ -115,8 +141,8 @@
 		561DF32E24F2427D00924DDB /* Coins-ExplorerTests */ = {
 			isa = PBXGroup;
 			children = (
-				561DF32F24F2427D00924DDB /* Coins_ExplorerTests.swift */,
 				561DF33124F2427D00924DDB /* Info.plist */,
+				561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */,
 			);
 			path = "Coins-ExplorerTests";
 			sourceTree = "<group>";
@@ -146,6 +172,10 @@
 			dependencies = (
 			);
 			name = "Coins-Explorer";
+			packageProductDependencies = (
+				561B489F24F246B40043D5D7 /* CryptoCompareKit */,
+				561B48A624F252EC0043D5D7 /* CombineSchedulers */,
+			);
 			productName = "Coins-Explorer";
 			productReference = 561DF31A24F2427C00924DDB /* Coins-Explorer.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +247,10 @@
 				Base,
 			);
 			mainGroup = 561DF31124F2427C00924DDB;
+			packageReferences = (
+				561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */,
+				561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */,
+			);
 			productRefGroup = 561DF31B24F2427C00924DDB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561DF32024F2427C00924DDB /* ContentView.swift in Sources */,
-				561DF31E24F2427C00924DDB /* Coins_ExplorerApp.swift in Sources */,
+				561DF32024F2427C00924DDB /* TopListView.swift in Sources */,
+				561B48A924F258470043D5D7 /* SearchFieldView.swift in Sources */,
+				561DF31E24F2427C00924DDB /* CoinsExplorerApp.swift in Sources */,
+				561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561DF33024F2427D00924DDB /* Coins_ExplorerTests.swift in Sources */,
+				561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +616,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sger/CryptoCompareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/combine-schedulers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		561B489F24F246B40043D5D7 /* CryptoCompareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */;
+			productName = CryptoCompareKit;
+		};
+		561B48A624F252EC0043D5D7 /* CombineSchedulers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */;
+			productName = CombineSchedulers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 561DF31224F2427C00924DDB /* Project object */;
 }

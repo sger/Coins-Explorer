@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "ff42ec9061d864de7982162011321d3df5080c10",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "CryptoCompareKit",
+        "repositoryURL": "https://github.com/sger/CryptoCompareKit",
+        "state": {
+          "branch": "main",
+          "revision": "64fba00d3333f6a33141d6c47782fb9f679449ca",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
