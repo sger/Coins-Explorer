@@ -17,6 +17,8 @@
 		561DF32224F2427D00924DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32124F2427D00924DDB /* Assets.xcassets */; };
 		561DF32524F2427D00924DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32424F2427D00924DDB /* Preview Assets.xcassets */; };
 		561DF33B24F2427D00924DDB /* Coins_ExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */; };
+		56C6679A24F29EB40087FC24 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 56C6679924F29EB40087FC24 /* SnapshotTesting */; };
+		56C6679C24F29ED10087FC24 /* TopListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C6679B24F29ED10087FC24 /* TopListViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		561DF33624F2427D00924DDB /* Coins-ExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerUITests.swift; sourceTree = "<group>"; };
 		561DF33C24F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C6679B24F29ED10087FC24 /* TopListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C6679A24F29EB40087FC24 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,7 @@
 			children = (
 				561DF33124F2427D00924DDB /* Info.plist */,
 				561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */,
+				56C6679B24F29ED10087FC24 /* TopListViewTests.swift */,
 			);
 			path = "Coins-ExplorerTests";
 			sourceTree = "<group>";
@@ -194,6 +199,9 @@
 				561DF32D24F2427D00924DDB /* PBXTargetDependency */,
 			);
 			name = "Coins-ExplorerTests";
+			packageProductDependencies = (
+				56C6679924F29EB40087FC24 /* SnapshotTesting */,
+			);
 			productName = "Coins-ExplorerTests";
 			productReference = 561DF32B24F2427D00924DDB /* Coins-ExplorerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -250,6 +258,7 @@
 			packageReferences = (
 				561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */,
 				561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */,
+				56C6679824F29EB40087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 561DF31B24F2427C00924DDB /* Products */;
 			projectDirPath = "";
@@ -304,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C6679C24F29ED10087FC24 /* TopListViewTests.swift in Sources */,
 				561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +644,14 @@
 				minimumVersion = 0.1.2;
 			};
 		};
+		56C6679824F29EB40087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -646,6 +664,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */;
 			productName = CombineSchedulers;
+		};
+		56C6679924F29EB40087FC24 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56C6679824F29EB40087FC24 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
