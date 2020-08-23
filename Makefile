@@ -19,3 +19,7 @@ build:
 
 test:
 	$(XCODEBUILD) test $(BUILD_FLAGS) $(XCPRETTY)
+
+format:
+	swift format --in-place --recursive \
+		./Coins-Explorer ./Coins-ExplorerTests
