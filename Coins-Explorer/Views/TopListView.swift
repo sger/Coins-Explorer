@@ -20,11 +20,11 @@ struct TopListView: View {
                 {
                     ForEach(viewModel.currentTopListData) { topListData in
                         HStack {
-                            Text("\(topListData.coinInfo.fullName)")
+                            Text("\(topListData.coinInfo?.fullName ?? "")")
                                 .font(.headline)
                                 .fontWeight(.bold)
                             Spacer()
-                            Text("\(topListData.coinInfo.name)")
+                            Text("\(topListData.coinInfo?.name ?? "")")
                                 .font(.subheadline)
                         }
                     }

@@ -48,7 +48,8 @@ final class TopListViewModel: ObservableObject {
             .debounce(for: .milliseconds(300), scheduler: scheduler)
             .removeDuplicates()
             .filter { !$0.isEmpty }
-            .map { [weak self] in self?.filteredTopListData(with: $0) ?? [] }
+            .map { [weak self] in self?.filteredTopListData(with: $0) ?? []
+            }
             .sink(receiveValue: { [weak self] in self?.searchResults = $0 })
     }
     
@@ -62,7 +63,7 @@ final class TopListViewModel: ObservableObject {
     
     private func filteredTopListData(with string: String) -> [TopListData] {
         topListData.filter {
-            $0.coinInfo.fullName.lowercased().contains(string.lowercased()) == true
+            $0.coinInfo?.fullName.lowercased().contains(string.lowercased()) == true
         }
     }
 }

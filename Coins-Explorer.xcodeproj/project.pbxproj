@@ -11,11 +11,11 @@
 		561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48A324F2524B0043D5D7 /* TopListViewModel.swift */; };
 		561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 561B48A624F252EC0043D5D7 /* CombineSchedulers */; };
 		561B48A924F258470043D5D7 /* SearchFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48A824F258470043D5D7 /* SearchFieldView.swift */; };
+		561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */; };
 		561DF31E24F2427C00924DDB /* CoinsExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */; };
-		561DF32024F2427C00924DDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31F24F2427C00924DDB /* ContentView.swift */; };
+		561DF32024F2427C00924DDB /* TopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF31F24F2427C00924DDB /* TopListView.swift */; };
 		561DF32224F2427D00924DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32124F2427D00924DDB /* Assets.xcassets */; };
 		561DF32524F2427D00924DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32424F2427D00924DDB /* Preview Assets.xcassets */; };
-		561DF33024F2427D00924DDB /* Coins_ExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF32F24F2427D00924DDB /* Coins_ExplorerTests.swift */; };
 		561DF33B24F2427D00924DDB /* Coins_ExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,14 +39,14 @@
 /* Begin PBXFileReference section */
 		561B48A324F2524B0043D5D7 /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
 		561B48A824F258470043D5D7 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
+		561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModelTests.swift; sourceTree = "<group>"; };
 		561DF31A24F2427C00924DDB /* Coins-Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coins-Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsExplorerApp.swift; sourceTree = "<group>"; };
-		561DF31F24F2427C00924DDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		561DF31F24F2427C00924DDB /* TopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListView.swift; sourceTree = "<group>"; };
 		561DF32124F2427D00924DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561DF32424F2427D00924DDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		561DF32624F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561DF32B24F2427D00924DDB /* Coins-ExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		561DF32F24F2427D00924DDB /* Coins_ExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerTests.swift; sourceTree = "<group>"; };
 		561DF33124F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561DF33624F2427D00924DDB /* Coins-ExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerUITests.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		561B48A224F247460043D5D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				561DF31F24F2427C00924DDB /* ContentView.swift */,
+				561DF31F24F2427C00924DDB /* TopListView.swift */,
 				561B48A824F258470043D5D7 /* SearchFieldView.swift */,
 			);
 			path = Views;
@@ -141,8 +141,8 @@
 		561DF32E24F2427D00924DDB /* Coins-ExplorerTests */ = {
 			isa = PBXGroup;
 			children = (
-				561DF32F24F2427D00924DDB /* Coins_ExplorerTests.swift */,
 				561DF33124F2427D00924DDB /* Info.plist */,
+				561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */,
 			);
 			path = "Coins-ExplorerTests";
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561DF32024F2427C00924DDB /* ContentView.swift in Sources */,
+				561DF32024F2427C00924DDB /* TopListView.swift in Sources */,
 				561B48A924F258470043D5D7 /* SearchFieldView.swift in Sources */,
 				561DF31E24F2427C00924DDB /* CoinsExplorerApp.swift in Sources */,
 				561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */,
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561DF33024F2427D00924DDB /* Coins_ExplorerTests.swift in Sources */,
+				561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
