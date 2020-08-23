@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct CoinsExplorerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            TopListView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      TopListView()
     }
+  }
 }
