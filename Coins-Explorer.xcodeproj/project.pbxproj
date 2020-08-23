@@ -91,8 +91,8 @@
 		561B48A224F247460043D5D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				561DF31F24F2427C00924DDB /* TopListView.swift */,
 				561B48A824F258470043D5D7 /* SearchFieldView.swift */,
+				561DF31F24F2427C00924DDB /* TopListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,12 +120,12 @@
 		561DF31C24F2427C00924DDB /* Coins-Explorer */ = {
 			isa = PBXGroup;
 			children = (
-				561B48A224F247460043D5D7 /* Views */,
-				561B48A124F2473F0043D5D7 /* ViewModels */,
-				561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */,
 				561DF32124F2427D00924DDB /* Assets.xcassets */,
+				561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */,
 				561DF32624F2427D00924DDB /* Info.plist */,
 				561DF32324F2427D00924DDB /* Preview Content */,
+				561B48A124F2473F0043D5D7 /* ViewModels */,
+				561B48A224F247460043D5D7 /* Views */,
 			);
 			path = "Coins-Explorer";
 			sourceTree = "<group>";
