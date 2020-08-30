@@ -15,8 +15,26 @@
         "repositoryURL": "https://github.com/sger/CryptoCompareKit",
         "state": {
           "branch": "main",
-          "revision": "64fba00d3333f6a33141d6c47782fb9f679449ca",
+          "revision": "5445afac7e16e98f5773e0e4217a37cf5ecab3a6",
           "version": null
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "ae3d0a7703eb883a876864f17a4591158199e9f2",
+          "version": "5.9.0"
+        }
+      },
+      {
+        "package": "SDWebImageSwiftUI",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI",
+        "state": {
+          "branch": null,
+          "revision": "4c7f169e39bc35d6b80d42b8eb8301bee9cd0907",
+          "version": "1.5.0"
         }
       }
     ]

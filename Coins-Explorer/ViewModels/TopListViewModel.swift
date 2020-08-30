@@ -42,7 +42,7 @@ final class TopListViewModel: ObservableObject {
     self.client = client
     self.scheduler = scheduler
 
-    fetchTopList(limit: 20, tsym: "USD")
+    fetchTopList(limit: 50, tsym: "USD")
 
     searchQueryCancellable =
       $searchQuery

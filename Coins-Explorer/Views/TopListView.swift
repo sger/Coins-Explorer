@@ -18,17 +18,10 @@ struct TopListView: View {
         Section(
           header: SearchFieldView(
             searchText: $viewModel.searchQuery,
-            placeholder: "Search")
+            placeholder: "Search Crypto")
         ) {
           ForEach(viewModel.currentTopListData) { topListData in
-            HStack {
-              Text("\(topListData.coinInfo?.fullName ?? "")")
-                .font(.headline)
-                .fontWeight(.bold)
-              Spacer()
-              Text("\(topListData.coinInfo?.name ?? "")")
-                .font(.subheadline)
-            }
+            TopListRowView(topListData: topListData)
           }
         }
       }
