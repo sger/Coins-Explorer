@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56160B2524F2B46D00EE3060 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 56160B2424F2B46D00EE3060 /* SDWebImageSwiftUI */; };
+		56160B2724F2B5D900EE3060 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56160B2624F2B5D900EE3060 /* ImageView.swift */; };
+		56160B2924F2B73D00EE3060 /* TopListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56160B2824F2B73D00EE3060 /* TopListRowView.swift */; };
 		561B48A024F246B40043D5D7 /* CryptoCompareKit in Frameworks */ = {isa = PBXBuildFile; productRef = 561B489F24F246B40043D5D7 /* CryptoCompareKit */; };
 		561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B48A324F2524B0043D5D7 /* TopListViewModel.swift */; };
 		561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */ = {isa = PBXBuildFile; productRef = 561B48A624F252EC0043D5D7 /* CombineSchedulers */; };
@@ -17,6 +20,9 @@
 		561DF32224F2427D00924DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32124F2427D00924DDB /* Assets.xcassets */; };
 		561DF32524F2427D00924DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561DF32424F2427D00924DDB /* Preview Assets.xcassets */; };
 		561DF33B24F2427D00924DDB /* Coins_ExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */; };
+		568BBDD224F2D31D00EDFFA9 /* TopListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568BBDD124F2D31D00EDFFA9 /* TopListRowViewModel.swift */; };
+		5692ED0524FC0E20006EB1A0 /* Coins-Explorer+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5692ED0424FC0E20006EB1A0 /* Coins-Explorer+Double.swift */; };
+		5692ED0724FC0FD4006EB1A0 /* DoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5692ED0624FC0FD4006EB1A0 /* DoubleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56160B2624F2B5D900EE3060 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		56160B2824F2B73D00EE3060 /* TopListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListRowView.swift; sourceTree = "<group>"; };
 		561B48A324F2524B0043D5D7 /* TopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModel.swift; sourceTree = "<group>"; };
 		561B48A824F258470043D5D7 /* SearchFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldView.swift; sourceTree = "<group>"; };
 		561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListViewModelTests.swift; sourceTree = "<group>"; };
@@ -51,6 +59,9 @@
 		561DF33624F2427D00924DDB /* Coins-ExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coins-ExplorerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		561DF33A24F2427D00924DDB /* Coins_ExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins_ExplorerUITests.swift; sourceTree = "<group>"; };
 		561DF33C24F2427D00924DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568BBDD124F2D31D00EDFFA9 /* TopListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListRowViewModel.swift; sourceTree = "<group>"; };
+		5692ED0424FC0E20006EB1A0 /* Coins-Explorer+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coins-Explorer+Double.swift"; sourceTree = "<group>"; };
+		5692ED0624FC0FD4006EB1A0 /* DoubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56160B2524F2B46D00EE3060 /* SDWebImageSwiftUI in Frameworks */,
 				561B48A724F252EC0043D5D7 /* CombineSchedulers in Frameworks */,
 				561B48A024F246B40043D5D7 /* CryptoCompareKit in Frameworks */,
 			);
@@ -84,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				561B48A324F2524B0043D5D7 /* TopListViewModel.swift */,
+				568BBDD124F2D31D00EDFFA9 /* TopListRowViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -93,6 +106,8 @@
 			children = (
 				561B48A824F258470043D5D7 /* SearchFieldView.swift */,
 				561DF31F24F2427C00924DDB /* TopListView.swift */,
+				56160B2624F2B5D900EE3060 /* ImageView.swift */,
+				56160B2824F2B73D00EE3060 /* TopListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +137,7 @@
 			children = (
 				561DF32124F2427D00924DDB /* Assets.xcassets */,
 				561DF31D24F2427C00924DDB /* CoinsExplorerApp.swift */,
+				5692ED0324FC0E04006EB1A0 /* Extensions */,
 				561DF32624F2427D00924DDB /* Info.plist */,
 				561DF32324F2427D00924DDB /* Preview Content */,
 				561B48A124F2473F0043D5D7 /* ViewModels */,
@@ -143,6 +159,7 @@
 			children = (
 				561DF33124F2427D00924DDB /* Info.plist */,
 				561B48AA24F2608C0043D5D7 /* TopListViewModelTests.swift */,
+				5692ED0624FC0FD4006EB1A0 /* DoubleTests.swift */,
 			);
 			path = "Coins-ExplorerTests";
 			sourceTree = "<group>";
@@ -154,6 +171,14 @@
 				561DF33C24F2427D00924DDB /* Info.plist */,
 			);
 			path = "Coins-ExplorerUITests";
+			sourceTree = "<group>";
+		};
+		5692ED0324FC0E04006EB1A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5692ED0424FC0E20006EB1A0 /* Coins-Explorer+Double.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +200,7 @@
 			packageProductDependencies = (
 				561B489F24F246B40043D5D7 /* CryptoCompareKit */,
 				561B48A624F252EC0043D5D7 /* CombineSchedulers */,
+				56160B2424F2B46D00EE3060 /* SDWebImageSwiftUI */,
 			);
 			productName = "Coins-Explorer";
 			productReference = 561DF31A24F2427C00924DDB /* Coins-Explorer.app */;
@@ -250,6 +276,7 @@
 			packageReferences = (
 				561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */,
 				561B48A524F252EC0043D5D7 /* XCRemoteSwiftPackageReference "combine-schedulers" */,
+				56160B2324F2B46D00EE3060 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 561DF31B24F2427C00924DDB /* Products */;
 			projectDirPath = "";
@@ -293,9 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568BBDD224F2D31D00EDFFA9 /* TopListRowViewModel.swift in Sources */,
+				56160B2724F2B5D900EE3060 /* ImageView.swift in Sources */,
+				56160B2924F2B73D00EE3060 /* TopListRowView.swift in Sources */,
 				561DF32024F2427C00924DDB /* TopListView.swift in Sources */,
 				561B48A924F258470043D5D7 /* SearchFieldView.swift in Sources */,
 				561DF31E24F2427C00924DDB /* CoinsExplorerApp.swift in Sources */,
+				5692ED0524FC0E20006EB1A0 /* Coins-Explorer+Double.swift in Sources */,
 				561B48A424F2524B0043D5D7 /* TopListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5692ED0724FC0FD4006EB1A0 /* DoubleTests.swift in Sources */,
 				561B48AB24F2608C0043D5D7 /* TopListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,6 +650,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		56160B2324F2B46D00EE3060 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sger/CryptoCompareKit";
@@ -637,6 +677,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		56160B2424F2B46D00EE3060 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56160B2324F2B46D00EE3060 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		561B489F24F246B40043D5D7 /* CryptoCompareKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 561B489E24F246B40043D5D7 /* XCRemoteSwiftPackageReference "CryptoCompareKit" */;

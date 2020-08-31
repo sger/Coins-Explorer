@@ -32,7 +32,7 @@ struct SearchFieldView: View {
         }.buttonStyle(BorderlessButtonStyle())
       }
     }
-    .padding(8)
+    .padding(10)
     .background(Color.white)
     .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
     .padding(2)
